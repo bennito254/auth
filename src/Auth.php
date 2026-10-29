@@ -750,7 +750,7 @@ class Auth
         }
 
         return $this->user = (new User(
-            $user
+            $user, false
         ))->setDb($this->db);
     }
 
